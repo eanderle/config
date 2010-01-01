@@ -102,7 +102,8 @@ chatnets = {
 channels = (
   { name = "#irssi"; chatnet = "ircnet"; autojoin = "No"; },
   { name = "silc"; chatnet = "silc"; autojoin = "No"; },
-  { name = "#brobrahs"; chatnet = "ppirc"; autojoin = "yes"; }
+  { name = "#brobrahs"; chatnet = "ppirc"; autojoin = "yes"; },
+  { name = "#derp"; chatnet = "ppirc"; autojoin = "yes"; }
 );
 
 aliases = {
@@ -299,6 +300,8 @@ settings = {
   "fe-common/core" = {
     theme = "solarized-universal";
     hilight_color = "= %R";
+    autolog_path = "~/irclogs/%Y/$tag/$0.%m-%d.log";
+    autolog = "yes";
   };
 };
 hilights = (
