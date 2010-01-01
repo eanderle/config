@@ -293,6 +293,8 @@ settings = {
     awl_display_nokey_active = "%k%2$N:$C%n";
     awl_display_key = "[$Q:$H$C$S]";
     awl_display_nokey = "[$N:$H$C$S]";
+    nicklist_height = "40";
+    nicklist_width = "16";
   };
   "fe-common/core" = {
     theme = "solarized-universal";
