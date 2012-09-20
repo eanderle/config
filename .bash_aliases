@@ -1,4 +1,5 @@
 alias v="vim"
+alias ga="git add"
 alias gl="git log"
 alias gs="git status"
 alias gp="git push"
