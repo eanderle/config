@@ -1,0 +1,11 @@
+remove mod4 = Super_L
+add mod3 = Super_L
+keysym Control_L = Mode_switch
+remove Lock = Caps_Lock
+keysym Caps_Lock = Control_L
+add Control = Control_L
+keycode 38 = a A adiaeresis Adiaeresis
+keycode 39 = o O odiaeresis Odiaeresis
+keycode 41 = u U udiaeresis Udiaeresis
+keycode 47 = s S ssharp
+keycode 131 = BackSpace BackSpace BackSpace BackSpace

@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/eric/src/openssh-5.6p1'
+let g:netrw_dirhist_2='/home/eric/src/mutt-1.5.20'
+let g:netrw_dirhist_3='/home/eric/.offlineimap'
+let g:netrw_dirhist_4='/home/eric/lol'
+let g:netrw_dirhist_5='/home/eric/Dropbox/school/fall12/eecs583/hw1/StatsPass'
