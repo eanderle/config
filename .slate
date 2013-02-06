@@ -52,3 +52,16 @@ bind l:${hyper} focus right
 bind h:${hyper} focus left
 bind k:${hyper} focus up
 bind j:${hyper} focus down
+
+bind c:${hyper} hide current
+
+# Application Specific
+bind a:${hyper} focus 'Adium'
+bind o:${hyper} focus 'Google Chrome'
+bind e:${hyper} focus 'iTerm'
+
+# Layouts
+layout 1monitorHacking 'Google Chrome': ${lefthalf}
+loyout 1monitorHacking 'iTerm': ${righthalf}
+
+bind ':${hyper} layout 1monitorHacking
