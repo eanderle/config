@@ -11,6 +11,7 @@ config windowHintsIgnoreHiddenWindows false
 #config windowHintsDuration 5
 config windowHintsSpread true
 #config windowHintsOrder persist
+config layoutFocusOnActivate true
  
 # Monitor Aliases
 alias mon-laptop      0
@@ -42,27 +43,45 @@ alias 2-righttop    move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2
 alias 2-rightbottom move screenOriginX+screenSizeX/2;screenOriginY+screenSizeY/2    screenSizeX/2;screenSizeY/2       ${mon-samsung}
 
 # Location bindings
-bind t:${hyper} ${lefthalf}
+bind h:${hyper} ${lefthalf}
 bind n:${hyper} ${full}
 bind s:${hyper} ${righthalf}
-bind r:${hyper} throw next
+#bind r:${hyper} throw next
 
 # Focus Bindings
+bind r:${hyper} focus left
 bind l:${hyper} focus right
-bind h:${hyper} focus left
-bind k:${hyper} focus up
-bind j:${hyper} focus down
+bind k:${hyper} focus above
+bind j:${hyper} focus below
+bind w:${hyper} focus behind
 
 bind c:${hyper} hide current
 
 # Application Specific
-bind a:${hyper} focus 'Adium'
-bind o:${hyper} focus 'Google Chrome'
-bind e:${hyper} focus 'iTerm'
-bind u:${hyper} focus 'Eclipse'
+#bind a:${hyper} focus 'Adium'
+#bind o:${hyper} focus 'Google Chrome'
+#bind e:${hyper} focus 'iTerm'
+#bind u:${hyper} focus 'Eclipse'
+#bind i:${hyper} focus 'Spotify'
 
 # Layouts
+layout 1monitorChrome 'Google Chrome': ${full}
+layout 1monitorIterm 'iTerm': ${full}
+layout 1monitorEclipse 'Eclipse': ${full}
+
 layout 1monitorHacking 'Google Chrome': ${lefthalf}
 layout 1monitorHacking 'iTerm': ${righthalf}
 
+layout 1monitorChat 'Google Chrome': ${lefthalf}
+layout 1monitorChat 'Adium': ${righthalf}
+
+layout 1monitorMusic 'Google Chrome': ${lefthalf}
+layout 1monitorMusic 'Spotify': ${righthalf}
+
+bind a:${hyper} layout 1monitorChrome
+bind o:${hyper} layout 1monitorIterm
+bind e:${hyper} layout 1monitorEclipse
+
 bind ':${hyper} layout 1monitorHacking
+bind ,:${hyper} layout 1monitorChat
+bind .:${hyper} layout 1monitorMusic
