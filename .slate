@@ -2,7 +2,7 @@
 config defaultToCurrentScreen true
 config nudgePercentOf screenSize
 config resizePercentOf screenSize
-config secondsBetweenRepeat 0.1
+config secondsBetweenRepeat 0.4
 config checkDefaultsOnLoad true
 config focusCheckWidthMax 3000
 config keyboardLayout dvorak
@@ -22,7 +22,7 @@ alias showNormalHint hint AOEUIDHTNSYXFBPKGMCW
 alias browser 'Google Chrome'
 alias editor 'MacVim'
  
-alias hyper f19
+alias hyper ctrl;alt;cmd
 
 # Abstract positions
 alias full          move screenOriginX;screenOriginY                  screenSizeX;screenSizeY
@@ -63,6 +63,6 @@ bind u:${hyper} focus 'Eclipse'
 
 # Layouts
 layout 1monitorHacking 'Google Chrome': ${lefthalf}
-loyout 1monitorHacking 'iTerm': ${righthalf}
+layout 1monitorHacking 'iTerm': ${righthalf}
 
 bind ':${hyper} layout 1monitorHacking
