@@ -14,8 +14,9 @@ config windowHintsSpread true
 #config layoutFocusOnActivate true
  
 # Monitor Aliases
-alias mon-laptop      1440x900
-alias mon-samsung    1920x1080
+alias mon-laptop     0
+alias mon-usb        2
+alias mon-samsung    1
  
 # Misc Aliases
 alias showHintsLeftHand hint AOEUIYQJKX
@@ -47,6 +48,9 @@ alias 2-top-r move screenOriginX+screenSizeX/2;screenOriginY                 scr
 alias 2-left  move screenOriginX;screenOriginY                               screenSizeX/2;screenSizeY       ${mon-samsung}
 alias 2-right move screenOriginX+screenSizeX/2;screenOriginY                 screenSizeX/2;screenSizeY       ${mon-samsung}
 alias 2-full move screenOriginX;screenOriginY                 screenSizeX;screenSizeY       ${mon-samsung}
+alias 3-chat  move screenOriginX;screenOriginY                               screenSizeX/9;screenSizeY       ${mon-usb}
+alias 3-main  move screenOriginX+screenSizeX/9;screenOriginY                 8*screenSizeX/9;screenSizeY     ${mon-usb}
+alias 3-full  move screenOriginX;screenOriginY                 screenSizeX;screenSizeY     ${mon-usb}
 #alias 3-l-bot move screenOriginX;screenOriginY+screenSizeY/2                 screenSizeX/2;screenSizeY/2     ${mon-hp22inch}
 #alias 3-l-top move screenOriginX;screenOriginY                               screenSizeX/2;screenSizeY/2     ${mon-hp22inch}
 #alias 3-right move screenOriginX+screenSizeX/2;screenOriginY                 screenSizeX/2;screenSizeY       ${mon-hp22inch}
@@ -82,4 +86,12 @@ layout 2monitors 'Adium':IGNORE_FAIL,TITLE_ORDER=Contacts ${1-chat} | ${1-main}
 layout 2monitors 'Eclipse':REPEAT                         ${2-full}
 layout 2monitors 'Spotify':REPEAT                         ${1-main}
 
+# 3 monitor
+layout 3monitors 'iTerm':REPEAT                           ${3-full}
+layout 3monitors 'Google Chrome':REPEAT                   ${2-full}
+layout 3monitors 'Adium':IGNORE_FAIL,TITLE_ORDER=Contacts ${1-chat} | ${1-main}
+layout 3monitors 'Eclipse':REPEAT                         ${3-full}
+layout 3monitors 'Spotify':REPEAT                         ${1-main}
+
 bind ;:${hyper} layout 2monitors
+bind q:${hyper} layout 3monitors
