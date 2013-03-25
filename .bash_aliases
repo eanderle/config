@@ -13,3 +13,4 @@ alias sa="svn add"
 alias sc="svn commit -m"
 alias sup="svn up"
 alias sd="svn diff"
+alias pp='python -mjson.tool'
