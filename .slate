@@ -15,8 +15,8 @@ config windowHintsSpread true
 
 # Monitor Aliases
 alias mon-laptop     0
-alias mon-usb        2
 alias mon-samsung    1
+alias mon-usb        2
 
 # Misc Aliases
 alias showHintsLeftHand hint AOEUIYQJKX
@@ -77,6 +77,7 @@ bind o:${hyper} focus 'Google Chrome'
 bind e:${hyper} focus 'iTerm'
 bind u:${hyper} focus 'Eclipse'
 bind i:${hyper} focus 'Spotify'
+bind ,:${hyper} focus 'VLC'
 bind .:${hyper} focus '1Password'
 bind p:${hyper} focus 'PhpStorm'
 
@@ -88,6 +89,7 @@ layout 2monitors 'Adium':IGNORE_FAIL,TITLE_ORDER=Contacts ${1-chat} | ${1-main}
 layout 2monitors 'Eclipse':REPEAT                         ${2-full}
 layout 2monitors 'PhpStorm':REPEAT                        ${2-full}
 layout 2monitors 'Spotify':REPEAT                         ${1-main}
+layout 2monitors 'VLC':REPEAT                             ${1-main}
 
 # 3 monitor
 layout 3monitors 'iTerm':REPEAT                           ${3-full}
@@ -96,6 +98,7 @@ layout 3monitors 'Adium':IGNORE_FAIL,TITLE_ORDER=Contacts ${1-chat} | ${1-main}
 layout 3monitors 'Eclipse':REPEAT                         ${2-full}
 layout 3monitors 'PhpStorm':REPEAT                        ${2-full}
 layout 3monitors 'Spotify':REPEAT                         ${1-main}
+layout 3monitors 'VLC':REPEAT                             ${1-main}
 
 bind ;:${hyper} layout 2monitors
 bind q:${hyper} layout 3monitors
