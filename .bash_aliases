@@ -14,3 +14,4 @@ alias sc="svn commit -m"
 alias sup="svn up"
 alias sd="svn diff"
 alias pp='python -mjson.tool'
+alias urle='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
