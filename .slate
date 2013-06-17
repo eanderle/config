@@ -77,7 +77,7 @@ bind o:${hyper} focus 'Google Chrome'
 bind e:${hyper} focus 'iTerm'
 bind u:${hyper} focus 'Eclipse'
 bind i:${hyper} focus 'Spotify'
-bind ,:${hyper} focus 'VLC'
+bind ,:${hyper} focus 'HipChat'
 bind .:${hyper} focus '1Password'
 bind p:${hyper} focus 'PhpStorm'
 
@@ -99,6 +99,7 @@ layout 3monitors 'Eclipse':REPEAT                         ${2-full}
 layout 3monitors 'PhpStorm':REPEAT                        ${2-full}
 layout 3monitors 'Spotify':REPEAT                         ${1-main}
 layout 3monitors 'VLC':REPEAT                             ${1-main}
+layout 3monitors 'HipChat':REPEAT                         ${1-full}
 
 bind ;:${hyper} layout 2monitors
 bind q:${hyper} layout 3monitors
