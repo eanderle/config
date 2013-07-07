@@ -1,8 +1,17 @@
 set t_Co=256
 set showcmd
 colorscheme moria
-filetype plugin indent on
 syntax on
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'derekwyatt/vim-scala'
+
+filetype plugin indent on
 
 set expandtab
 set tabstop=4
