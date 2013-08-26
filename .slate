@@ -88,8 +88,8 @@ layout 2monitors 'Google Chrome':REPEAT                   ${1-full}
 layout 2monitors 'Adium':IGNORE_FAIL,TITLE_ORDER=Contacts ${1-chat} | ${1-main}
 layout 2monitors 'Eclipse':REPEAT                         ${2-full}
 layout 2monitors 'PhpStorm':REPEAT                        ${2-full}
-layout 2monitors 'Spotify':REPEAT                         ${1-main}
-layout 2monitors 'VLC':REPEAT                             ${1-main}
+layout 2monitors 'Spotify':REPEAT                         ${1-full}
+layout 2monitors 'VLC':REPEAT                             ${1-full}
 
 # 3 monitor
 layout 3monitors 'iTerm':REPEAT                           ${3-full}
@@ -97,8 +97,8 @@ layout 3monitors 'Google Chrome':REPEAT                   ${3-full}
 layout 3monitors 'Adium':IGNORE_FAIL,TITLE_ORDER=Contacts ${1-chat} | ${1-main}
 layout 3monitors 'Eclipse':REPEAT                         ${2-full}
 layout 3monitors 'PhpStorm':REPEAT                        ${2-full}
-layout 3monitors 'Spotify':REPEAT                         ${1-main}
-layout 3monitors 'VLC':REPEAT                             ${1-main}
+layout 3monitors 'Spotify':REPEAT                         ${1-full}
+layout 3monitors 'VLC':REPEAT                             ${1-full}
 layout 3monitors 'HipChat':REPEAT                         ${1-full}
 
 bind ;:${hyper} layout 2monitors
