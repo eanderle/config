@@ -7,8 +7,8 @@ alias gpo="git push origin"
 alias gpom="git push origin master"
 alias gpu="git pull"
 alias gc="git commit -am"
-alias gd="git diff --head"
-alias go="gitopen"
+alias gd="git diff head"
+alias gopen="gitopen"
 
 push_branch() {
     branch=`git rev-parse --symbolic-full-name --abbrev-ref HEAD`
