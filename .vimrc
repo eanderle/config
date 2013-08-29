@@ -6,10 +6,14 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/ctrlp.vim
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'derekwyatt/vim-scala'
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 filetype plugin indent on
 
