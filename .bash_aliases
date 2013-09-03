@@ -1,4 +1,6 @@
 alias v="vim"
+
+## Git aliases
 alias ga="git add"
 alias gl="git log"
 alias gs="git status"
@@ -21,11 +23,19 @@ push_branch() {
 alias gpob='push_branch origin'
 alias gpb='push_branch'
 
+## svn aliases
 alias ss="svn status"
 alias sa="svn add"
 alias sc="svn commit -m"
 alias sup="svn up"
 alias sd="svn diff"
+
+## pretty printing
 alias pp='python -mjson.tool'
 alias px='xmllint --format -'
 alias urle='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
+
+## mvn aliases
+alias mc="mvn clean"
+alias mci="mvn clean install"
+alias mcis="mvn clean install -DskipTests=true"
