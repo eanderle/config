@@ -34,6 +34,7 @@ alias leftmost      move screenOriginX;screenOriginY                  screenSize
 alias leftless      move screenOriginX;screenOriginY                  screenSizeX*0.4;screenSizeY
 # Concrete positions
 alias 1-chat  move screenOriginX;screenOriginY                               screenSizeX/9;screenSizeY       ${mon-laptop}
+alias 1-tweet move screenOriginX;screenOriginY                               420;screenSizeY       ${mon-laptop}
 alias 1-main  move screenOriginX+screenSizeX/9;screenOriginY                 8*screenSizeX/9;screenSizeY     ${mon-laptop}
 alias 1-full  move screenOriginX;screenOriginY                 screenSizeX;screenSizeY     ${mon-laptop}
 alias 2-bot   move screenOriginX;screenOriginY+screenSizeY/2                 screenSizeX;screenSizeY/2       ${mon-samsung}
@@ -80,6 +81,7 @@ bind i:${hyper} focus 'Spotify'
 bind ,:${hyper} focus 'HipChat'
 bind .:${hyper} focus '1Password'
 bind p:${hyper} focus 'PhpStorm'
+bind ':${hyper} focus 'TweetDeck'
 
 # Layouts
 # 2 monitor
@@ -90,6 +92,7 @@ layout 2monitors 'Eclipse':REPEAT                         ${2-full}
 layout 2monitors 'PhpStorm':REPEAT                        ${2-full}
 layout 2monitors 'Spotify':REPEAT                         ${1-full}
 layout 2monitors 'VLC':REPEAT                             ${1-full}
+layout 2monitors 'TweetDeck':REPEAT                       ${1-tweet}
 
 # 3 monitor
 layout 3monitors 'iTerm':REPEAT                           ${3-full}
@@ -100,6 +103,7 @@ layout 3monitors 'PhpStorm':REPEAT                        ${2-full}
 layout 3monitors 'Spotify':REPEAT                         ${1-full}
 layout 3monitors 'VLC':REPEAT                             ${1-full}
 layout 3monitors 'HipChat':REPEAT                         ${1-full}
+layout 3monitors 'TweetDeck':REPEAT                       ${1-tweet}
 
 bind ;:${hyper} layout 2monitors
 bind q:${hyper} layout 3monitors
