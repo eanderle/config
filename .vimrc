@@ -11,6 +11,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'derekwyatt/vim-scala'
+Bundle 'davidhalter/jedi-vim'
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
