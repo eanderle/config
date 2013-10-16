@@ -3,7 +3,7 @@ set showcmd
 colorscheme moria
 syntax on
 set nocompatible
-filetype off
+set backspace=indent,eol,start
 
 set rtp+=~/.vim/bundle/vundle/
 set rtp+=~/.vim/bundle/ctrlp.vim
@@ -11,7 +11,8 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'derekwyatt/vim-scala'
-Bundle 'davidhalter/jedi-vim'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'godlygeek/tabular'
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
