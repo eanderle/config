@@ -76,7 +76,7 @@ bind tab:cmd switch
 bind a:${hyper} focus 'Adium'
 bind o:${hyper} focus 'Google Chrome'
 bind e:${hyper} focus 'iTerm'
-bind u:${hyper} focus 'Eclipse'
+bind u:${hyper} focus 'IntelliJ IDEA'
 bind i:${hyper} focus 'Spotify'
 bind ,:${hyper} focus 'HipChat'
 bind .:${hyper} focus '1Password'
@@ -88,7 +88,7 @@ bind ':${hyper} focus 'TweetDeck'
 layout 2monitors 'iTerm':REPEAT                           ${2-full}
 layout 2monitors 'Google Chrome':REPEAT                   ${1-full}
 layout 2monitors 'Adium':IGNORE_FAIL,TITLE_ORDER=Contacts ${1-chat} | ${1-main}
-layout 2monitors 'Eclipse':REPEAT                         ${2-full}
+layout 2monitors 'IntelliJ IDEA':REPEAT                   ${2-full}
 layout 2monitors 'PhpStorm':REPEAT                        ${2-full}
 layout 2monitors 'Spotify':REPEAT                         ${1-full}
 layout 2monitors 'VLC':REPEAT                             ${1-full}
@@ -98,7 +98,7 @@ layout 2monitors 'TweetDeck':REPEAT                       ${1-tweet}
 layout 3monitors 'iTerm':REPEAT                           ${3-full}
 layout 3monitors 'Google Chrome':REPEAT                   ${3-full}
 layout 3monitors 'Adium':IGNORE_FAIL,TITLE_ORDER=Contacts ${1-chat} | ${1-main}
-layout 3monitors 'Eclipse':REPEAT                         ${2-full}
+layout 3monitors 'IntelliJ IDEA':REPEAT                   ${2-full}
 layout 3monitors 'PhpStorm':REPEAT                        ${2-full}
 layout 3monitors 'Spotify':REPEAT                         ${1-full}
 layout 3monitors 'VLC':REPEAT                             ${1-full}
