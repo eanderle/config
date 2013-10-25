@@ -288,9 +288,20 @@ settings = {
     nick = "eanderle";
   };
   "fe-text" = { actlist_sort = "refnum"; };
-  "perl/core/scripts" = { awl_display_key = "%w$N.$H$C$S"; };
-  "fe-common/core" = { theme = "pbrisbin"; };
+  "perl/core/scripts" = {
+    awl_display_key_active = "%k%2$N:$C%n";
+    awl_display_nokey_active = "%k%2$N:$C%n";
+    awl_display_key = "[$Q:$H$C$S]";
+    awl_display_nokey = "[$N:$H$C$S]";
+  };
+  "fe-common/core" = {
+    theme = "solarized-universal";
+    hilight_color = "= %R";
+  };
 };
+hilights = (
+  { text = "derSoldat"; color = "%M"; nick = "yes"; word = "yes"; }
+);
 ignores = (
   { mask = "MODES"; level = "JOINS PARTS QUITS"; },
   { level = "JOINS PARTS QUITS MODES"; }
