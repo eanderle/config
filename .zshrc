@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -45,4 +45,4 @@ plugins=(git osx autojump mvn)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/eanderle/android/android-sdk-macosx/platform-tools:/Users/eanderle/.rvm/bin:/Users/eanderle/src/twilio/deploys/fab.pytwilio/venv/bin:$PATH
+export PATH=/Users/eanderle/Library/Python/2.7/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/eanderle/android/android-sdk-macosx/platform-tools:/Users/eanderle/.rvm/bin:/Users/eanderle/src/twilio/deploys/fab.pytwilio/venv/bin:$PATH
