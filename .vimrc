@@ -1,9 +1,17 @@
+syntax enable
+set background=dark
+colorscheme solarized
+
 set t_Co=256
 set showcmd
-colorscheme moria
-syntax on
 set nocompatible
 set backspace=indent,eol,start
+
+" powerline?!
+set rtp+=~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim/
+
+" Always show statusline
+set laststatus=2
 
 set rtp+=~/.vim/bundle/vundle/
 set rtp+=~/.vim/bundle/ctrlp.vim
@@ -13,6 +21,7 @@ Bundle 'gmarik/vundle'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'godlygeek/tabular'
+Bundle 'altercation/vim-colors-solarized'
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
