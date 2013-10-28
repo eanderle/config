@@ -22,6 +22,9 @@ push_branch() {
 }
 alias gpob='push_branch origin'
 alias gpb='push_branch'
+gcob() {
+    gc $1 && gpob
+}
 
 ## svn aliases
 alias ss="svn status"
