@@ -26,6 +26,8 @@ Bundle 'altercation/vim-colors-solarized'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
+let g:ycm_autoclose_preview_window_after_insertion = 1
+
 filetype plugin indent on
 
 set ignorecase
