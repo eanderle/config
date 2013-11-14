@@ -57,13 +57,13 @@ alias 3-full  move screenOriginX;screenOriginY                 screenSizeX;scree
 #alias 3-right move screenOriginX+screenSizeX/2;screenOriginY                 screenSizeX/2;screenSizeY       ${mon-hp22inch}
 
 # Location bindings
-bind h:${hyper} ${lefthalf}
+bind c:${hyper} ${lefthalf}
 bind n:${hyper} ${full}
-bind s:${hyper} ${righthalf}
+bind r:${hyper} ${righthalf}
 bind -:${hyper} throw next
 
 # Focus Bindings
-bind r:${hyper} focus left
+bind h:${hyper} focus left
 bind l:${hyper} focus right
 #bind k:${hyper} focus above
 #bind j:${hyper} focus below
