@@ -4,6 +4,7 @@
   <option name="EDITOR_FONT_SIZE" value="15" />
   <option name="CONSOLE_FONT_NAME" value="Monaco" />
   <option name="CONSOLE_FONT_SIZE" value="16" />
+  <option name="EDITOR_QUICK_DOC_FONT_SIZE" value="MEDIUM" />
   <option name="EDITOR_FONT_NAME" value="Monaco" />
   <colors>
     <option name="ADDED_LINES_COLOR" value="" />
@@ -21,7 +22,7 @@
     <option name="NOTIFICATION_BACKGROUND" value="" />
     <option name="READONLY_FRAGMENT_BACKGROUND" value="" />
     <option name="RECURSIVE_CALL_ATTRIBUTES" value="" />
-    <option name="RIGHT_MARGIN_COLOR" value="" />
+    <option name="RIGHT_MARGIN_COLOR" value="474747" />
     <option name="SELECTED_INDENT_GUIDE" value="" />
     <option name="SELECTED_TEARLINE_COLOR" value="" />
     <option name="SELECTION_BACKGROUND" value="2b2b2b" />
@@ -441,6 +442,24 @@
     <option name="LESS_VARIABLE">
       <value>
         <option name="FOREGROUND" value="2075dd" />
+      </value>
+    </option>
+    <option name="LINE_FULL_COVERAGE">
+      <value>
+        <option name="FOREGROUND" value="ff24" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="LINE_NONE_COVERAGE">
+      <value>
+        <option name="FOREGROUND" value="ff0f00" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="LINE_PARTIAL_COVERAGE">
+      <value>
+        <option name="FOREGROUND" value="ffea00" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="LOCAL_VARIABLE_ATTRIBUTES">
