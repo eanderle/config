@@ -22,6 +22,7 @@ Bundle 'derekwyatt/vim-scala'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'godlygeek/tabular'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'git://git.code.sf.net/p/vim-latex/vim-latex'
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
