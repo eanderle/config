@@ -43,3 +43,5 @@ alias urle='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]
 alias mc="mvn clean"
 alias mci="mvn clean install"
 alias mcis="mvn clean install -DskipTests=true"
+
+alias ag="ag -i"
