@@ -69,7 +69,7 @@ bind l:${hyper} focus right
 #bind j:${hyper} focus below
 bind t:${hyper} focus behind
 
-bind c:${hyper} hide current
+bind 1:${hyper} hide current
 bind tab:cmd switch
 
 # Application Specific
