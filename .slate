@@ -82,7 +82,7 @@ bind y:${hyper} focus 'VLC'
 bind ,:${hyper} focus 'HipChat'
 bind .:${hyper} focus '1Password'
 bind p:${hyper} focus 'PhpStorm'
-bind ':${hyper} focus 'Firefox'
+bind ':${hyper} focus 'Slack'
 
 # Layouts
 # 2 monitor
@@ -104,6 +104,7 @@ layout 3monitors 'PhpStorm':REPEAT                        ${2-full}
 layout 3monitors 'Spotify':REPEAT                         ${1-full}
 layout 3monitors 'VLC':REPEAT                             ${1-full}
 layout 3monitors 'HipChat':REPEAT                         ${1-full}
+layout 3monitors 'Slack':REPEAT                         ${1-full}
 layout 3monitors 'TweetDeck':REPEAT                       ${1-tweet}
 
 bind ;:${hyper} layout 2monitors
