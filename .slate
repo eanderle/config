@@ -81,7 +81,7 @@ bind i:${hyper} focus 'Spotify'
 bind y:${hyper} focus 'VLC'
 bind ,:${hyper} focus 'HipChat'
 bind .:${hyper} focus '1Password'
-bind p:${hyper} focus 'PhpStorm'
+bind p:${hyper} focus 'Firefox'
 bind ':${hyper} focus 'Slack'
 
 # Layouts
