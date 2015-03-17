@@ -6,6 +6,7 @@ set t_Co=256
 set showcmd
 set nocompatible
 set backspace=indent,eol,start
+filetype off " required
 
 " powerline?!
 set rtp+=~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim/
@@ -13,23 +14,25 @@ set rtp+=~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim/
 " Always show statusline
 set laststatus=2
 
-set rtp+=~/.vim/bundle/vundle/
-set rtp+=~/.vim/bundle/ctrlp.vim
-call vundle#rc()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
-Bundle 'derekwyatt/vim-scala'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'godlygeek/tabular'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'git://git.code.sf.net/p/vim-latex/vim-latex'
+Plugin 'gmarik/vundle'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'godlygeek/tabular'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'git://git.code.sf.net/p/vim-latex/vim-latex'
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
-filetype plugin indent on
+"All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 set ignorecase
 set smartcase
