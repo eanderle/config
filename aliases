@@ -10,12 +10,20 @@ alias gpom="git push origin master"
 alias gpull="git pull"
 alias gpullo="git pull origin"
 alias gpullom="git pull origin master"
-alias gpullum="git pull upstream master"
 alias gc="git commit -am"
 alias gd="git diff head"
 alias gb="git branch"
 alias gche="git checkout"
 alias gopen="gitopen"
+
+function gpullum() {
+    current_branch=$(git rev-parse --abbrev-ref HEAD);
+    default_branch=$(git rev-parse --abbrev-ref origin/HEAD | awk -F "/" '{print $NF}');
+    if [ $current_branch != $default_branch ]; then
+        git checkout $default_branch;
+    fi
+    git pull upstream $default_branch;
+}
 
 push_branch() {
     branch=`git rev-parse --symbolic-full-name --abbrev-ref HEAD`
