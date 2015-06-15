@@ -80,7 +80,7 @@ bind u:${hyper} focus 'IntelliJ IDEA'
 bind i:${hyper} focus 'Spotify'
 bind y:${hyper} focus 'VLC'
 bind ,:${hyper} focus 'HipChat'
-bind .:${hyper} focus '1Password'
+bind .:${hyper} focus '1Password 4'
 bind p:${hyper} focus 'Firefox'
 bind ':${hyper} focus 'Slack'
 
