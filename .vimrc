@@ -19,7 +19,7 @@ call vundle#begin()
 
 Plugin 'gmarik/vundle'
 Plugin 'derekwyatt/vim-scala'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'godlygeek/tabular'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'git://git.code.sf.net/p/vim-latex/vim-latex'
