@@ -24,6 +24,8 @@ Plugin 'godlygeek/tabular'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'git://git.code.sf.net/p/vim-latex/vim-latex'
 
+let g:Tex_DefaultTargetFormat = 'pdf'
+
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 

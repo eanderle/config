@@ -1,1 +1,2 @@
 @setxkbmap -option ctrl:nocaps
+@xmodmap /home/eric/.xmodmap
