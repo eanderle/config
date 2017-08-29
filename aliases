@@ -36,6 +36,10 @@ gcob() {
     gc $1 && gpob
 }
 
+function gpurge() {
+    git branch | xargs git branch -d
+}
+
 ## svn aliases
 alias ss="svn status"
 alias sa="svn add"
