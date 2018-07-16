@@ -22,6 +22,8 @@ Plugin 'derekwyatt/vim-scala'
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'godlygeek/tabular'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'AndrewRadev/linediff.vim'
+Plugin 'vimwiki/vimwiki'
 Plugin 'git://git.code.sf.net/p/vim-latex/vim-latex'
 
 let g:Tex_DefaultTargetFormat = 'pdf'
