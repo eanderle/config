@@ -1,6 +1,7 @@
 syntax enable
 set background=dark
 
+" various terminal incantations
 set t_Co=256
 set showcmd
 set nocompatible
@@ -17,6 +18,7 @@ set laststatus=2
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" plugins
 Plugin 'gmarik/vundle'
 Plugin 'derekwyatt/vim-scala'
 "Plugin 'Valloric/YouCompleteMe'
@@ -26,17 +28,13 @@ Plugin 'AndrewRadev/linediff.vim'
 Plugin 'vimwiki/vimwiki'
 Plugin 'git://git.code.sf.net/p/vim-latex/vim-latex'
 
-let g:Tex_DefaultTargetFormat = 'pdf'
-
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" text settings
 set ignorecase
 set smartcase
 
@@ -44,6 +42,7 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
+" visual settings
 set guifont=Terminus\ 10
 set guioptions=  "remove everything
 
@@ -74,6 +73,12 @@ function! s:ToggleWhitespaceMatch(mode)
   endif
 endfunction
 
+" tex
+let g:Tex_DefaultTargetFormat = 'pdf'
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
 let g:Tex_IgnoredWarnings =
             \'Underfull'."\n".
             \'Overfull'."\n".
@@ -86,3 +91,6 @@ let g:Tex_IgnoredWarnings =
             \'LaTeX Font Warning'."\n"
 
 let g:Tex_IgnoreLevel = 10
+
+" vimwiki
+:let mapleader=","
