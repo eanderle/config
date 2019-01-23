@@ -94,3 +94,6 @@ let g:Tex_IgnoreLevel = 10
 
 " vimwiki
 :let mapleader=","
+let g:vimwiki_list = [
+            \{'path': '~/mnt/crypto/personal/vimwiki'}
+        \]
