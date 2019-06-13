@@ -26,7 +26,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'AndrewRadev/linediff.vim'
 Plugin 'vimwiki/vimwiki'
-Plugin 'git://git.code.sf.net/p/vim-latex/vim-latex'
+Plugin 'vim-latex/vim-latex'
 
 let g:ycm_autoclose_preview_window_after_insertion = 1
 

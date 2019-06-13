@@ -61,3 +61,7 @@ alias ag="ag -i"
 
 alias ng="ngrok http -subdomain eric"
 alias ws='/Applications/Wireshark.app/Contents/MacOS/Wireshark "$@"&'
+
+# docker
+alias dcub="docker-compose up --build"
+alias dcd="docker-compose down"
