@@ -19,7 +19,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " plugins
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'derekwyatt/vim-scala'
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'godlygeek/tabular'
@@ -93,6 +93,7 @@ let g:Tex_IgnoredWarnings =
 let g:Tex_IgnoreLevel = 10
 
 " vimwiki
+" apparently mapleader is a GLOBAL setting, so latex compilation is now ,ll
 :let mapleader=","
 let g:vimwiki_list = [
             \{'path': '~/mnt/crypto/personal/vimwiki'}
