@@ -21,14 +21,14 @@ call vundle#begin()
 " plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'derekwyatt/vim-scala'
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'ycm-core/YouCompleteMe'
 Plugin 'godlygeek/tabular'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'AndrewRadev/linediff.vim'
 Plugin 'vimwiki/vimwiki'
 Plugin 'vim-latex/vim-latex'
 
-let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
 
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
