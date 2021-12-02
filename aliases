@@ -65,3 +65,7 @@ alias ws='/Applications/Wireshark.app/Contents/MacOS/Wireshark "$@"&'
 # docker
 alias dcub="docker-compose up --build"
 alias dcd="docker-compose down"
+
+function dbash() {
+  docker container exec $(docker ps --filter name="$1" -q) /bin/bash
+}
