@@ -1,0 +1,13 @@
+[user]
+	email = enanderle@gmail.com
+	name = Eric Anderle
+[merge]
+	conflictstyle = diff3
+[core]
+	pager = less -F -X
+[remote "upstream"]
+	fetch = +refs/pull/*/head:refs/remotes/upstream/pr/*
+[diff]
+    tool = vimdiff
+[difftool]
+    prompt = false
