@@ -1,5 +1,6 @@
 alias ga="git add"
 alias gl="git log"
+alias glo="git log --oneline"
 alias gs="git status"
 alias gp="git push"
 alias gpo="git push origin"
