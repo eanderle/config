@@ -114,3 +114,9 @@ disabled = true
 
 [python]
 disabled = true
+
+[helm]
+disabled = true
+
+[package]
+disabled = true
