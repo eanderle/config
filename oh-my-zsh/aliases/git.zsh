@@ -29,6 +29,7 @@ push_branch() {
     git push $1 $branch
 }
 alias gpob='push_branch origin'
+alias gpub='push_branch upstream'
 alias gpb='push_branch'
 gcob() {
     gc $1 && gpob
@@ -36,4 +37,7 @@ gcob() {
 
 function gpurge() {
     git branch | xargs git branch -d
+}
+function gkillwhitespace() {
+    git diff -U0 -w --no-color | git apply --cached --ignore-whitespace --unidiff-zero && git restore .
 }
