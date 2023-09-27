@@ -36,7 +36,7 @@ alias gpob='push_branch origin'
 alias gpub='push_branch upstream'
 alias gpb='push_branch'
 gcob() {
-    gc $1 && gpob
+    gc -m $1 && gpob
 }
 
 function gpurge() {
