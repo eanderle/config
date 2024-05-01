@@ -45,3 +45,15 @@ function gpurge() {
 function gkillwhitespace() {
     git diff -U0 -w --no-color | git apply --cached --ignore-whitespace --unidiff-zero && git restore .
 }
+
+#!/bin/bash -e
+# given a commit, find immediate children of that commit.
+function gchildren() {
+    for arg in "$@"; do
+      for commit in $(git rev-parse $arg^0); do
+        for child in $(git log --format='%H %P' --all | grep -F " $commit" | cut -f1 -d' '); do
+          git describe $child
+        done
+      done
+    done
+}
