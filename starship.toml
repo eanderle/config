@@ -92,13 +92,14 @@ $character"""
 # customize stuff
 #######################
 [aws]
+disabled = true
 format = 'on [$symbol$region]($style) '
 style = 'bold blue'
 symbol = '🅰 '
 
 # https://starship.rs/config/#kubernetes
 [kubernetes]
-disabled = false
+disabled = true
 format = 'on [⛵$context \($namespace\)](green) '
 
 # this simplifies the cluster line to:
@@ -119,4 +120,13 @@ disabled = true
 disabled = true
 
 [package]
+disabled = true
+
+[git_branch]
+disabled = false
+
+[git_status]
+disabled = false
+
+[pulumi]
 disabled = true
